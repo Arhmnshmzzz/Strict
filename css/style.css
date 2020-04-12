@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+li.nav-item {
+    margin-left: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.banner{
+
+    background-image: url(../Picture/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+}
+
+.hg {
+height: 80vh;
+
+}
+.banner h1 {
+
+    font-size: 100px;
+    color: white;
+}
+
+.banner span {
+
+    height: 2px;
+    width: 100%;
+    background-color: #007bff;
+    display: inline-block;
+}
+
+.banner p {
+color: whitesmoke;
+margin: 20px 0px;
+}
+
+.btn {
+background:transparent ;
+border: 1px solid #007bff;
+margin-top: 20px;
+ 
+}
+.icon {
+
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+transform: translateX(-50%);
+animation: up_down 1.5s linear infinite;
+animation-direction: alternate;
+}
+
+@keyframes up_down{
+    0% {
+        bottom: -20%;
+    }
+    
+    100%{
+        bottom: -50%;
+
+    }
+
+}
+
+.simple {
+background-color: #f6f9f9;
+padding: 50px 0px;
+    
+}
+
+.simple h1 {
+color: #2d3950;
+font-weight: 300;
+
+}
+
+.simple p{
+
+color: #999999;
+font-weight: 400;
+
+}
+.features {
+
+    padding: 50px 0px;
+}
+
+.feature-icon {
+
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+51,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 51%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+} 
+.features h5 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+.item {
+
+position: relative ;
+
+}
+
+.item::after{
+    content: '';
+    position: absolute;
+    background: #2aaaf0bf;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.item:hover::after{
+  
+    height: 100%;
+
+}
+
+.item-logo {
+position:  absolute;
+
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50% );
+opacity: 0;
+transition: .4s all ease-in-out;
+
+
+}
+
+.item-logo ul {
+
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+width: 80px;
+
+}
+
+.item-logo ul  li {
+
+    border: 1px solid;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+}
+
+.Showcase:hover .item-logo {
+
+    opacity: 2;
+}
+
+.row {
+
+    margin-bottom: 20px;
+}
